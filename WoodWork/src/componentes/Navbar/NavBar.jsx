@@ -3,8 +3,8 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <div className="container">
+    <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
+      <div className="container-fluid">
         <a className="navbar-brand d-flex align-items-center" href="/">
           <div style={{width:36, height:36, borderRadius:8, background:'#8FA68E', display:'flex', alignItems:'center', justifyContent:'center', color:'#fff', marginRight:10}}>WW</div>
           <div>
