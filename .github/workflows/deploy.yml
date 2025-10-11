@@ -34,7 +34,9 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
+
       - name: Install dependencies
+        working-directory: WoodWork
         run: npm ci
 
       - name: Upload build artifact
