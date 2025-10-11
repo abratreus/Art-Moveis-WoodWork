@@ -35,17 +35,16 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Install dependencies (WoodWork)
-        working-directory: WoodWork
-        run: |
-          cd /home/runner/work/Art-Moveis-WoodWork/WoodWork/package.json
-          npm ci
+      # If you need to build the WoodWork subproject, uncomment and adjust the following lines:
+      # - name: Install dependencies (WoodWork)
+      #   working-directory: WoodWork
+      #   run: npm ci
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: dist
+          name: github-pages
           path: dist
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
