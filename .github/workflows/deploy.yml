@@ -37,7 +37,9 @@ jobs:
 
       - name: Install dependencies (WoodWork)
         working-directory: WoodWork
-        run: npm ci
+        run: |
+          cd /home/runner/work/Art-Moveis-WoodWork/WoodWork/package.json
+          npm ci
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
