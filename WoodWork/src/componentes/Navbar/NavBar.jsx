@@ -1,8 +1,8 @@
 //NavBar.jsx
 import React from 'react';
 
-export default function Navbar() {
-  return (
+export default function NavBar() {
+  return ( 
     <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
       <div className="container-fluid">
         <a className="navbar-brand d-flex align-items-center" href="/">
