@@ -36,7 +36,7 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3 # Or actions/upload-artifact@v4 if packaging manually
         with:
-          path: ./_site # Or wherever your built site files are located
+          path: WoodWork # Or wherever your built site files are located
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
 
