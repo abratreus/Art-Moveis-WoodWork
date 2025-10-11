@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import NavBar from 'Art-Moveis-WoodWork\WoodWork\src\componentes\NavBar\NavBar.jsx';
+import NavBar from './componentes/NavBar/NavBar';
 
 function App() {
   const [count, setCount] = useState(0)
