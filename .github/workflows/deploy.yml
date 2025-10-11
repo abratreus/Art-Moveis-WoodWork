@@ -37,11 +37,6 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
 
-      # If you need to build the WoodWork subproject, uncomment and adjust the following lines:
-      # - name: Install dependencies (WoodWork)
-      #   working-directory: WoodWork
-      #   run: npm ci
-
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
