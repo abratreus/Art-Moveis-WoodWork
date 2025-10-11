@@ -22,9 +22,11 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
+        working-directory: WoodWork
         run: npm ci
 
       - name: Build (Vite)
+        working-directory: WoodWork
         run: npm run build
 
       - name: Create .nojekyll file to avoid Jekyll processing
